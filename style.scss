@@ -1,0 +1,91 @@
+body {
+  position: relative;
+  min-height: 100vh;
+  background-image: url(./recipes/img/lime-2481346_1920.jpg);
+  background-repeat: repeat;
+  margin: 0;
+  padding: 20px 20px;
+  font-family: 'Cormorant Garamond','Noto Serif', Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+  font-weight: 400;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, .4);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  > a:first-child {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgba(245, 245, 245, 0.9);
+    padding: 10px 15px;
+    margin: 10px;
+    margin-bottom: 0;
+  }
+
+  
+
+   #steps {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+  }
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  figcaption a {
+    color: #ffd700;
+    text-decoration: none;
+  }
+}
+
+section{
+  > ol > li {
+    font-weight: bold;
+    line-height: 1.5em;
+  }
+
+  > ol > li ol,
+  > ol > li ul {
+    font-weight: normal;
+  }
+
+}
+#ingredients, #steps {
+  i {
+    font-size: .8em;
+    text-shadow:
+    0 1px 1px whitesmoke,
+    0 -1px 1px whitesmoke,
+    1px 0 1px whitesmoke,
+    -1px 0 1px whitesmoke
+    ;
+  }
+}
